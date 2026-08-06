@@ -1,0 +1,154 @@
+:root {
+    --background: #0f172a;
+    --surface: #111827;
+    --primary: #22d3ee;
+    --secondary: #f97316;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --border: rgba(255,255,255,.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: radial-gradient(circle at top, #172554 0%, var(--background) 60%);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+.hero {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+.content {
+    width: 100%;
+    max-width: 760px;
+
+    text-align: center;
+
+    padding: 4rem;
+
+    background: rgba(17,24,39,.6);
+
+    border: 1px solid var(--border);
+
+    border-radius: 24px;
+
+    backdrop-filter: blur(12px);
+}
+
+.eyebrow {
+    color: var(--primary);
+
+    font-size: .8rem;
+
+    letter-spacing: .3rem;
+
+    font-weight: 700;
+}
+
+h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+
+    margin-top: 1rem;
+
+    margin-bottom: 1rem;
+
+    font-weight: 800;
+}
+
+.tagline {
+    font-size: 1.5rem;
+
+    color: var(--secondary);
+
+    margin-bottom: 2rem;
+
+    font-weight: 500;
+}
+
+.description {
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    max-width: 620px;
+
+    margin: auto;
+}
+
+.divider {
+    width: 100px;
+
+    height: 2px;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--primary),
+        transparent
+    );
+
+    margin: 3rem auto;
+}
+
+.status {
+    display: inline-block;
+
+    padding: .9rem 1.5rem;
+
+    border-radius: 999px;
+
+    background: rgba(34,211,238,.12);
+
+    border: 1px solid rgba(34,211,238,.25);
+
+    margin-bottom: 2rem;
+
+    color: var(--primary);
+
+    font-weight: 600;
+}
+
+.button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: var(--secondary);
+
+    padding: 1rem 2rem;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    transition: .25s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 30px rgba(249,115,22,.35);
+}
+
+footer {
+    text-align: center;
+
+    color: var(--muted);
+
+    padding: 2rem;
+}
