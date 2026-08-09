@@ -1,84 +1,128 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Software consultancy | Onyx Foundry</title>
-  <meta name="description" content="Onyx Foundry helps software companies build scalable systems, clearer knowledge and thoughtful user experiences.">
+  <meta name="description"
+    content="Onyx Foundry helps software companies build scalable systems, clearer knowledge and thoughtful user experiences.">
   <meta name="theme-color" content="#08121F">
   <link rel="icon" href="assets/brand/onyx-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RPSM9ZNHGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-RPSM9ZNHGH');
+</script>
 
 <body>
-<div class="page-shell">
+  <div class="page-shell">
 
-<header class="site-header">
-  <a class="brand" href="index.html" aria-label="Onyx Foundry home">
-    <img src="assets/brand/onyx-mark.svg" alt="" class="brand-mark">
-    <span class="brand-name">ONYX<br>FOUNDRY</span>
-  </a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Onyx Foundry home">
+        <img src="assets/brand/onyx-mark.svg" alt="" class="brand-mark">
+        <span class="brand-name">ONYX<br>FOUNDRY</span>
+      </a>
 
-  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-    <span class="sr-only">Toggle navigation</span>
-    <span></span><span></span><span></span>
-  </button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
 
-  <nav id="site-nav" class="site-nav" aria-label="Primary">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="request.html">Request a Project</a>
-    <a href="about.html">About</a>
-    <a class="button button-small button-outline" href="request.html">Get in Touch</a>
-  </nav>
-</header>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="request.html">Request a Project</a>
+        <a href="about.html">About</a>
+        <a class="button button-small button-outline" href="request.html">Get in Touch</a>
+      </nav>
+    </header>
 
-<main>
-  <section class="hero split">
-    <div class="hero-copy">
-      <p class="eyebrow">Software consultancy</p>
-      <h1>Forging exceptional software <span>experiences.</span></h1>
-      <p class="lead">We help software companies build better systems, clearer knowledge and experiences that scale.</p>
-      <div class="actions">
-        <a class="button button-secondary" href="services.html">Our Services</a>
+    <main>
+      <section class="hero split">
+        <div class="hero-copy">
+          <p class="eyebrow">Software consultancy</p>
+          <h1>Forging exceptional software <span>experiences.</span></h1>
+          <p class="lead">We help software companies build better systems, clearer knowledge and experiences that scale.
+          </p>
+          <div class="actions">
+            <a class="button button-secondary" href="services.html">Our Services</a>
+            <a class="button button-primary" href="request.html">Request a Project</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/images/forge-hero.svg" alt="Onyx crystal suspended above an anvil">
+        </div>
+      </section>
+
+      <section class="pillars four">
+        <article><span class="icon">◇</span>
+          <h2>Knowledge</h2>
+          <p>We turn complexity into clarity.</p>
+        </article>
+        <article><span class="icon">⌘</span>
+          <h2>Systems</h2>
+          <p>We build solutions that scale.</p>
+        </article>
+        <article><span class="icon">◉</span>
+          <h2>Experience</h2>
+          <p>We design for real people.</p>
+        </article>
+        <article><span class="icon">✓</span>
+          <h2>Impact</h2>
+          <p>We deliver outcomes that matter.</p>
+        </article>
+      </section>
+
+      <section class="section compact">
+        <div class="section-heading">
+          <p class="eyebrow">What we do</p>
+          <h2>Focused services. <span>Real impact.</span></h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Documentation & Knowledge Audit</h3>
+            <p>Find the gaps, friction and duplication holding your knowledge back.</p><a
+              href="services.html#audit">Explore service →</a>
+          </article>
+          <article class="card">
+            <h3>API & Developer Documentation</h3>
+            <p>Clear, practical documentation that helps developers integrate faster.</p><a
+              href="services.html#api">Explore service →</a>
+          </article>
+          <article class="card">
+            <h3>Documentation Systems & Docs-as-Code</h3>
+            <p>Modern workflows that make documentation easier to maintain and ship.</p><a
+              href="services.html#docs-as-code">Explore service →</a>
+          </article>
+          <article class="card">
+            <h3>UX & Knowledge Experience Review</h3>
+            <p>Improve findability, usability and the path from question to answer.</p><a
+              href="services.html#ux">Explore service →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div>
+          <p class="eyebrow">Have a problem worth solving?</p>
+          <h2>Tell us what you’re working on.</h2>
+        </div>
         <a class="button button-primary" href="request.html">Request a Project</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Onyx Foundry</strong>
+        <span>Systems. Knowledge. Experience.</span>
       </div>
-    </div>
-    <div class="hero-art">
-      <img src="assets/images/forge-hero.svg" alt="Onyx crystal suspended above an anvil">
-    </div>
-  </section>
+      <p>© <span data-current-year></span> Onyx Foundry</p>
 
-  <section class="pillars four">
-    <article><span class="icon">◇</span><h2>Knowledge</h2><p>We turn complexity into clarity.</p></article>
-    <article><span class="icon">⌘</span><h2>Systems</h2><p>We build solutions that scale.</p></article>
-    <article><span class="icon">◉</span><h2>Experience</h2><p>We design for real people.</p></article>
-    <article><span class="icon">✓</span><h2>Impact</h2><p>We deliver outcomes that matter.</p></article>
-  </section>
-
-  <section class="section compact">
-    <div class="section-heading">
-      <p class="eyebrow">What we do</p>
-      <h2>Focused services. <span>Real impact.</span></h2>
-    </div>
-    <div class="cards">
-      <article class="card"><h3>Documentation & Knowledge Audit</h3><p>Find the gaps, friction and duplication holding your knowledge back.</p><a href="services.html#audit">Explore service →</a></article>
-      <article class="card"><h3>API & Developer Documentation</h3><p>Clear, practical documentation that helps developers integrate faster.</p><a href="services.html#api">Explore service →</a></article>
-      <article class="card"><h3>Documentation Systems & Docs-as-Code</h3><p>Modern workflows that make documentation easier to maintain and ship.</p><a href="services.html#docs-as-code">Explore service →</a></article>
-      <article class="card"><h3>UX & Knowledge Experience Review</h3><p>Improve findability, usability and the path from question to answer.</p><a href="services.html#ux">Explore service →</a></article>
-    </div>
-  </section>
-
-  <section class="cta-band">
-    <div><p class="eyebrow">Have a problem worth solving?</p><h2>Tell us what you’re working on.</h2></div>
-    <a class="button button-primary" href="request.html">Request a Project</a>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div>
-    <strong>Onyx Foundry</strong>
-    <span>Systems. Knowledge. Experience.</span>
-  </div>
-    <p>© <span data-current-year></span> Onyx Foundry</p>
 </html>
