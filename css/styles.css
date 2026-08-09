@@ -85,7 +85,6 @@ h1 span,h2 span{color:var(--orange)}
 .centered .lead{margin-inline:auto}
 .service-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .service{padding:34px}
-.service-number{color:var(--cyan);font-size:.75rem;letter-spacing:.22em}
 .service h2{font-size:1.55rem}
 .service>p{color:var(--muted)}
 .service-meta{border-top:1px solid var(--border);margin-top:28px;padding-top:22px;display:grid;gap:16px}
