@@ -1,53 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onyx Foundry</title>
-
-    <link rel="stylesheet" href="css/site.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software consultancy | Onyx Foundry</title>
+  <meta name="description" content="Onyx Foundry helps software companies build scalable systems, clearer knowledge and thoughtful user experiences.">
+  <meta name="theme-color" content="#08121F">
+  <link rel="icon" href="assets/brand/onyx-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+<div class="page-shell">
 
-    <main class="hero">
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Onyx Foundry home">
+    <img src="assets/brand/onyx-mark.svg" alt="" class="brand-mark">
+    <span class="brand-name">ONYX<br>FOUNDRY</span>
+  </a>
 
-        <div class="content">
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+    <span class="sr-only">Toggle navigation</span>
+    <span></span><span></span><span></span>
+  </button>
 
-            <span class="eyebrow">SOFTWARE CONSULTANCY</span>
+  <nav id="site-nav" class="site-nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="request.html">Request a Project</a>
+    <a href="about.html">About</a>
+    <a class="button button-small button-outline" href="request.html">Get in Touch</a>
+  </nav>
+</header>
 
-            <h1>Onyx Foundry</h1>
+<main>
+  <section class="hero split">
+    <div class="hero-copy">
+      <p class="eyebrow">Software consultancy</p>
+      <h1>Forging exceptional software <span>experiences.</span></h1>
+      <p class="lead">We help software companies build better systems, clearer knowledge and experiences that scale.</p>
+      <div class="actions">
+        <a class="button button-secondary" href="services.html">Our Services</a>
+        <a class="button button-primary" href="request.html">Request a Project</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="assets/images/forge-hero.svg" alt="Onyx crystal suspended above an anvil">
+    </div>
+  </section>
 
-            <p class="tagline">
-                Forging exceptional software experiences.
-            </p>
+  <section class="pillars four">
+    <article><span class="icon">◇</span><h2>Knowledge</h2><p>We turn complexity into clarity.</p></article>
+    <article><span class="icon">⌘</span><h2>Systems</h2><p>We build solutions that scale.</p></article>
+    <article><span class="icon">◉</span><h2>Experience</h2><p>We design for real people.</p></article>
+    <article><span class="icon">✓</span><h2>Impact</h2><p>We deliver outcomes that matter.</p></article>
+  </section>
 
-            <p class="description">
-                We build modern .NET applications, AI-powered knowledge systems,
-                developer platforms and intelligent software solutions.
-            </p>
+  <section class="section compact">
+    <div class="section-heading">
+      <p class="eyebrow">What we do</p>
+      <h2>Focused services. <span>Real impact.</span></h2>
+    </div>
+    <div class="cards">
+      <article class="card"><h3>Documentation & Knowledge Audit</h3><p>Find the gaps, friction and duplication holding your knowledge back.</p><a href="services.html#audit">Explore service →</a></article>
+      <article class="card"><h3>API & Developer Documentation</h3><p>Clear, practical documentation that helps developers integrate faster.</p><a href="services.html#api">Explore service →</a></article>
+      <article class="card"><h3>Documentation Systems & Docs-as-Code</h3><p>Modern workflows that make documentation easier to maintain and ship.</p><a href="services.html#docs-as-code">Explore service →</a></article>
+      <article class="card"><h3>UX & Knowledge Experience Review</h3><p>Improve findability, usability and the path from question to answer.</p><a href="services.html#ux">Explore service →</a></article>
+    </div>
+  </section>
 
-            <div class="divider"></div>
+  <section class="cta-band">
+    <div><p class="eyebrow">Have a problem worth solving?</p><h2>Tell us what you’re working on.</h2></div>
+    <a class="button button-primary" href="request.html">Request a Project</a>
+  </section>
+</main>
 
-            <div class="status">
-                🚀 Website launching soon
-            </div>
-
-            <a href="mailto:info@onyx-foundry.com" class="button">
-                info@onyx-foundry.com
-            </a>
-
-        </div>
-
-    </main>
-
-    <footer>
-        © 2026 Onyx Foundry
-    </footer>
-</body>
+<footer class="site-footer">
+  <div>
+    <strong>Onyx Foundry</strong>
+    <span>Systems. Knowledge. Experience.</span>
+  </div>
+    <p>© <span data-current-year></span> Onyx Foundry</p>
 </html>

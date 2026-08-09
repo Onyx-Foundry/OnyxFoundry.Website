@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" role="img" aria-labelledby="title">
+<title>Onyx Foundry crystal mark</title>
+<defs>
+  <linearGradient id="cyan" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#22D3EE"/>
+    <stop offset="1" stop-color="#0F6C85"/>
+  </linearGradient>
+  <linearGradient id="ember" x1="0" x2="1" y1="1" y2="0">
+    <stop offset="0" stop-color="#FF7117"/>
+    <stop offset="1" stop-color="#F59E42"/>
+  </linearGradient>
+</defs>
+<path d="M60 4 105 43 91 119 60 156 29 119 15 43Z" fill="#0B1422" stroke="#42546A" stroke-width="3"/>
+<path d="M60 4 60 156 29 119 15 43Z" fill="#101E31"/>
+<path d="M60 4 105 43 91 119 60 156Z" fill="#09111D"/>
+<path d="M15 43 60 4 46 56Z" fill="url(#cyan)" opacity=".9"/>
+<path d="M105 43 60 4 76 57Z" fill="#D9E7F1" opacity=".65"/>
+<path d="M29 119 60 156 58 83Z" fill="#07101B"/>
+<path d="M91 119 60 156 61 83Z" fill="url(#ember)" opacity=".85"/>
+<path d="M46 56 60 83 76 57" fill="none" stroke="#22D3EE" stroke-width="2" opacity=".7"/>
+<path d="M60 83 91 119" fill="none" stroke="#FF7117" stroke-width="3" opacity=".9"/>
+</svg>
