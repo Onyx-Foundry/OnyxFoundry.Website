@@ -38,7 +38,7 @@
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="request.html">Request a Project</a>
+        <a href="request.html" aria-current="page">Request a Project</a>
         <a href="about.html">About</a>
         <a class="button button-small button-outline" href="request.html">Get in Touch</a>
       </nav>
@@ -47,16 +47,16 @@
     <main>
       <section class="request-layout">
         <div class="request-copy">
-          <p class="eyebrow">Let’s talk</p>
+          <p class="eyebrow">Let's talk</p>
           <h1>Tell us about your <span>project.</span></h1>
           <p class="lead">
-            A few details are enough to get started. We’ll review your request
+            A few details are enough to get started. We'll review your request
             and reply within two business days.
           </p>
           <div class="quiet-note">
             <strong>No compulsory discovery call.</strong>
             <p>
-              We’ll start asynchronously and only suggest a call if it will
+              We'll start asynchronously and only suggest a call if it will
               genuinely help.
             </p>
           </div>
@@ -85,19 +85,21 @@
               <input name="website" type="url" placeholder="https://" /></label>
           </div>
 
-          <label>What do you need help with?
-            <select name="service" required>
-              <option value="">Select a service</option>
-              <option>Documentation & Knowledge Audit</option>
-              <option>API & Developer Documentation</option>
-              <option>Documentation Systems & Docs-as-Code</option>
-              <option>UX & Knowledge Experience Review</option>
-              <option>Something else</option>
+          <label>Where in the knowledge lifecycle are you?
+            <select name="service" id="service-select" required>
+              <option value="">Select a lifecycle stage</option>
+              <option value="knowledge-foundation">Knowledge Foundation</option>
+              <option value="structure-authority">Structure & Authority</option>
+              <option value="documentation-engineering">Documentation Engineering</option>
+              <option value="developer-knowledge">Developer Knowledge</option>
+              <option value="agent-readiness">Agent Readiness</option>
+              <option value="agent-ready-knowledge-architecture">Agent-Ready Knowledge Architecture</option>
+              <option value="unsure">Not sure yet</option>
             </select>
           </label>
 
           <label>Tell us about the problem
-            <textarea name="problem" rows="6" placeholder="What’s happening now, and what would you like to improve?"
+            <textarea name="problem" rows="6" placeholder="What's happening now, and what would you like to improve?"
               required></textarea>
           </label>
 
@@ -148,6 +150,23 @@
   </div>
   <script src="js/main.js" defer></script>
   <script src="js/request-form.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var params = new URLSearchParams(window.location.search);
+      var stage = params.get("stage");
+      if (stage) {
+        var select = document.getElementById("service-select");
+        if (select) {
+          for (var i = 0; i < select.options.length; i++) {
+            if (select.options[i].value === stage) {
+              select.selectedIndex = i;
+              break;
+            }
+          }
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>

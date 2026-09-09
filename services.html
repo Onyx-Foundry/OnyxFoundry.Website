@@ -8,14 +8,14 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-  
+
     gtag('config', 'G-RPSM9ZNHGH');
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Onyx Foundry | Services</title>
   <meta name="description"
-    content="Focused consulting services across documentation, developer experience, knowledge systems and UX.">
+    content="A six-stage knowledge lifecycle model — from foundation to agent-ready — for software organisations.">
   <link rel="canonical" href="https://onyx-foundry.com/services.html">
   <meta name="theme-color" content="#08121F">
   <link rel="icon" href="assets/brand/onyx-mark.svg" type="image/svg+xml">
@@ -38,7 +38,7 @@
 
       <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
+        <a href="services.html" aria-current="page">Services</a>
         <a href="request.html">Request a Project</a>
         <a href="about.html">About</a>
         <a class="button button-small button-outline" href="request.html">Get in Touch</a>
@@ -47,61 +47,335 @@
 
     <main>
       <section class="page-intro centered">
-        <p class="eyebrow">What we do</p>
-        <h1>Focused services. <span>Real impact.</span></h1>
-        <p class="lead">Practical, bounded engagements for software teams with something specific to improve.</p>
+        <p class="eyebrow">Knowledge Lifecycle</p>
+        <h1>From foundation to <span>agent-ready.</span></h1>
+        <p class="lead">A six-stage model for building knowledge that people — and AI — can depend on.</p>
       </section>
 
-      <section class="service-grid">
-        <article class="service" id="audit">
-          <h2>Documentation & Knowledge Audit</h2>
-          <p>We review your existing documentation and knowledge landscape to identify gaps, duplication, structural
-            issues and friction.</p>
-          <div class="service-meta">
-            <div><strong>You receive</strong><span>Findings, priorities, proposed structure and a practical
-                roadmap.</span></div>
-            <div><strong>Typical engagement</strong><span>1–2 weeks</span></div>
-          </div>
-        </article>
+      <section class="lifecycle" id="lifecycle">
+        <div class="lifecycle-grid">
+          <a class="lifecycle-stage" href="#knowledge-foundation">
+            <svg class="lifecycle-crystal" viewBox="0 0 40 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 2L38 20L20 54L2 20Z" stroke="var(--cyan)" stroke-width="1.5" fill="rgba(34,211,238,0.08)"/>
+              <path d="M20 2L38 20M20 2L2 20M20 54L38 20M20 54L2 20" stroke="var(--cyan)" stroke-width="0.5" opacity="0.4"/>
+            </svg>
+            <span class="lifecycle-name">Knowledge Foundation</span>
+            <span class="lifecycle-action">Understand what you have</span>
+          </a>
+          <a class="lifecycle-stage" href="#structure-authority">
+            <svg class="lifecycle-crystal" viewBox="0 0 40 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 2L38 20L20 54L2 20Z" stroke="var(--cyan)" stroke-width="1.5" fill="rgba(34,211,238,0.08)"/>
+              <path d="M20 2L38 20M20 2L2 20M20 54L38 20M20 54L2 20" stroke="var(--cyan)" stroke-width="0.5" opacity="0.4"/>
+            </svg>
+            <span class="lifecycle-name">Structure & Authority</span>
+            <span class="lifecycle-action">Agree on what matters</span>
+          </a>
+          <a class="lifecycle-stage" href="#documentation-engineering">
+            <svg class="lifecycle-crystal" viewBox="0 0 40 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 2L38 20L20 54L2 20Z" stroke="var(--cyan)" stroke-width="1.5" fill="rgba(34,211,238,0.08)"/>
+              <path d="M20 2L38 20M20 2L2 20M20 54L38 20M20 54L2 20" stroke="var(--cyan)" stroke-width="0.5" opacity="0.4"/>
+            </svg>
+            <span class="lifecycle-name">Documentation Engineering</span>
+            <span class="lifecycle-action">Build workflows that last</span>
+          </a>
+          <a class="lifecycle-stage" href="#developer-knowledge">
+            <svg class="lifecycle-crystal" viewBox="0 0 40 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 2L38 20L20 54L2 20Z" stroke="var(--cyan)" stroke-width="1.5" fill="rgba(34,211,238,0.08)"/>
+              <path d="M20 2L38 20M20 2L2 20M20 54L38 20M20 54L2 20" stroke="var(--cyan)" stroke-width="0.5" opacity="0.4"/>
+            </svg>
+            <span class="lifecycle-name">Developer Knowledge</span>
+            <span class="lifecycle-action">Make knowledge usable</span>
+          </a>
+          <a class="lifecycle-stage" href="#agent-readiness">
+            <svg class="lifecycle-crystal" viewBox="0 0 40 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 2L38 20L20 54L2 20Z" stroke="var(--cyan)" stroke-width="1.5" fill="rgba(34,211,238,0.08)"/>
+              <path d="M20 2L38 20M20 2L2 20M20 54L38 20M20 54L2 20" stroke="var(--cyan)" stroke-width="0.5" opacity="0.4"/>
+            </svg>
+            <span class="lifecycle-name">Agent Readiness</span>
+            <span class="lifecycle-action">Check what's ready</span>
+          </a>
+          <a class="lifecycle-stage" href="#agent-ready-knowledge-architecture">
+            <svg class="lifecycle-crystal" viewBox="0 0 40 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 2L38 20L20 54L2 20Z" stroke="var(--cyan)" stroke-width="1.5" fill="rgba(34,211,238,0.08)"/>
+              <path d="M20 2L38 20M20 2L2 20M20 54L38 20M20 54L2 20" stroke="var(--cyan)" stroke-width="0.5" opacity="0.4"/>
+            </svg>
+            <span class="lifecycle-name">Agent-Ready Knowledge Architecture</span>
+            <span class="lifecycle-action">Design the knowledge layer</span>
+          </a>
+        </div>
+      </section>
 
-        <article class="service" id="api">
-          <h2>API & Developer Documentation</h2>
-          <p>We create developer documentation that makes integration easier—from getting started and authentication to
-            examples and troubleshooting.</p>
-          <div class="service-meta">
-            <div><strong>You receive</strong><span>A clear developer journey and implementation-ready
-                documentation.</span></div>
-            <div><strong>Typical engagement</strong><span>Scoped to your API or documentation set</span></div>
-          </div>
-        </article>
+      <nav class="page-nav" aria-label="Page sections">
+        <a href="#knowledge-foundation">Foundation</a>
+        <a href="#structure-authority">Structure</a>
+        <a href="#documentation-engineering">Documentation</a>
+        <a href="#developer-knowledge">Developer</a>
+        <a href="#agent-readiness">Readiness</a>
+        <a href="#agent-ready-knowledge-architecture">Architecture</a>
+        <a href="#diagnostic">Where do I start?</a>
+      </nav>
 
-        <article class="service" id="docs-as-code">
-          <h2>Documentation Systems & Docs-as-Code</h2>
-          <p>We design lightweight documentation workflows that fit the way your engineering team already works.</p>
-          <div class="service-meta">
-            <div><strong>You receive</strong><span>Repository structure, workflow, standards and publishing
-                approach.</span></div>
-            <div><strong>Typical engagement</strong><span>2–4 weeks</span></div>
+      <section class="rails-section">
+        <div class="rail rail-experience">
+          <p class="rail-label">Experience</p>
+          <p class="rail-tagline">Clear, usable, findable</p>
+          <p>Make sure the knowledge works for the people who need it.</p>
+          <p class="rail-detail">How people find, understand, navigate, and use knowledge — across every stage of the lifecycle.</p>
+          <div class="rail-includes">
+            <span>Findability & navigation</span>
+            <span>User and developer journeys</span>
+            <span>Content usability</span>
+            <span>Accessibility & clarity</span>
           </div>
-        </article>
+        </div>
+        <div class="rail rail-governance">
+          <p class="rail-label">Governance</p>
+          <p class="rail-tagline">Owned, trustworthy, maintainable</p>
+          <p>Keep knowledge owned, trustworthy, and maintainable as it changes.</p>
+          <p class="rail-detail">Review, approval, maintenance, and retirement — the ongoing discipline that keeps knowledge reliable.</p>
+          <div class="rail-includes">
+            <span>Ownership & accountability</span>
+            <span>Review & approval</span>
+            <span>Source authority & traceability</span>
+            <span>Lifecycle & change control</span>
+          </div>
+        </div>
+      </section>
 
-        <article class="service" id="ux">
-          <h2>UX & Knowledge Experience Review</h2>
-          <p>We assess how people navigate, understand and use your product or knowledge experience—and show you where
-            it can be simpler.</p>
-          <div class="service-meta">
-            <div><strong>You receive</strong><span>UX findings, annotated recommendations and prioritized
-                improvements.</span></div>
-            <div><strong>Typical engagement</strong><span>1–2 weeks</span></div>
+      <section class="stage-detail" id="knowledge-foundation">
+        <div class="stage-split">
+          <div class="stage-columns">
+            <div>
+              <div class="stage-header">
+                <h2>Knowledge Foundation</h2>
+              </div>
+              <p class="stage-tagline">Understand what you have before deciding what to change.</p>
+              <div class="stage-body">
+                <p>We map your existing knowledge, identify gaps and duplication, and highlight what needs attention first.</p>
+              </div>
+              <a class="stage-cta" href="request.html?stage=knowledge-foundation">Start here →</a>
+            </div>
+            <div class="stage-services">
+              <h3>Typical services</h3>
+              <ul>
+                <li>Documentation & knowledge audits</li>
+                <li>Content inventory & mapping</li>
+                <li>Gap & duplication analysis</li>
+                <li>Current-state recommendations</li>
+              </ul>
+            </div>
           </div>
-        </article>
+        </div>
+      </section>
+
+      <section class="stage-detail" id="structure-authority">
+        <div class="stage-split">
+          <div class="stage-columns">
+            <div>
+              <div class="stage-header">
+                <h2>Structure & Authority</h2>
+              </div>
+              <p class="stage-kicker">Collaborative analysis, shared understanding, and agreed foundations.</p>
+              <p class="stage-tagline">Work out how the knowledge really fits together — and what people should be able to rely on.</p>
+              <div class="stage-body">
+                <p>We work with your subject-matter experts through structured discovery sessions to build a shared understanding of what knowledge you have, where it lives, and how it connects.</p>
+                <p>Together, we define what's authoritative, map ownership and governance, and establish the foundations that everything else builds on.</p>
+              </div>
+              <a class="stage-cta" href="request.html?stage=structure-authority">Start here →</a>
+            </div>
+            <div class="stage-services">
+              <h3>Typical services</h3>
+              <ul>
+                <li>SME discovery & deep dives</li>
+                <li>Business systems & process analysis</li>
+                <li>Information architecture</li>
+                <li>Source-of-truth mapping</li>
+                <li>Ownership & governance design</li>
+                <li>Terminology & lifecycle modelling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stage-detail" id="documentation-engineering">
+        <div class="stage-split">
+          <div class="stage-columns">
+            <div>
+              <div class="stage-header">
+                <h2>Documentation Engineering</h2>
+              </div>
+              <p class="stage-tagline">Turn agreed knowledge structures into workflows that stay current.</p>
+              <div class="stage-body">
+                <p>We help you move from ad-hoc documentation to repeatable workflows — setting up docs-as-code pipelines, review processes, and publishing systems that fit the way your team already works.</p>
+                <p>The result is an operational model where documentation stays current because the process makes it easy, not because someone remembers to do it.</p>
+              </div>
+              <a class="stage-cta" href="request.html?stage=documentation-engineering">Start here →</a>
+            </div>
+            <div class="stage-services">
+              <h3>Typical services</h3>
+              <ul>
+                <li>Docs-as-code setup</li>
+                <li>Repository & content structure</li>
+                <li>Review and approval workflows</li>
+                <li>Publishing & release processes</li>
+                <li>Versioning & change control</li>
+                <li>Automated quality and drift checks</li>
+                <li>Content migration & transition planning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stage-detail" id="developer-knowledge">
+        <div class="stage-split">
+          <div class="stage-columns">
+            <div>
+              <div class="stage-header">
+                <h2>Developer Knowledge</h2>
+              </div>
+              <p class="stage-tagline">Make technical knowledge easier to understand, navigate, and use — by people and the tools they rely on.</p>
+              <div class="stage-body">
+                <p>We focus on the knowledge developers actually need — clear API documentation, getting-started guides, authentication flows, and troubleshooting paths that reduce integration time.</p>
+                <p>Good developer knowledge also means knowledge that works well with AI-assisted tools. We make sure your documentation is structured so both people and tooling can use it effectively.</p>
+              </div>
+              <div class="stage-callout">
+                <p><strong>Why this matters:</strong> Clear developer knowledge reduces support load, shortens integration time, and makes your product easier to adopt and build on.</p>
+              </div>
+              <a class="stage-cta" href="request.html?stage=developer-knowledge">Start here →</a>
+            </div>
+            <div class="stage-services">
+              <h3>Typical services</h3>
+              <ul>
+                <li>API & developer documentation</li>
+                <li>Getting started & authentication guidance</li>
+                <li>OpenAPI & specification review</li>
+                <li>Examples & integration flows</li>
+                <li>Developer troubleshooting</li>
+                <li>Documentation & specification alignment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stage-detail" id="agent-readiness">
+        <div class="stage-split">
+          <div class="stage-columns">
+            <div>
+              <div class="stage-header">
+                <h2>Agent Readiness</h2>
+              </div>
+              <p class="stage-tagline">Find out whether your knowledge is ready — and what needs to change before you rely on it.</p>
+              <div class="stage-body">
+                <p>We assess whether your existing knowledge is ready for AI and agent use — looking at quality, structure, metadata, and retrieval paths.</p>
+                <p>This isn't about chasing automation. It's about understanding what would need to change before you could rely on AI to use your knowledge accurately and consistently.</p>
+                <p class="stage-human-note"><em>Some knowledge decisions shouldn't be automated. We help you see where human judgement and ownership still matter.</em></p>
+              </div>
+              <div class="stage-callout">
+                <p><strong>Why this matters:</strong> AI tools are only as dependable as the knowledge behind them. Understanding your readiness now prevents expensive problems later.</p>
+              </div>
+              <a class="stage-cta" href="request.html?stage=agent-readiness">Start here →</a>
+            </div>
+            <div class="stage-services">
+              <h3>Typical services</h3>
+              <ul>
+                <li>AI / agent readiness assessment</li>
+                <li>Knowledge-source & quality review</li>
+                <li>Metadata & retrieval readiness</li>
+                <li>Permissions & access mapping</li>
+                <li>Duplication & freshness analysis</li>
+                <li>Source reliability & retrieval evaluation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stage-detail" id="agent-ready-knowledge-architecture">
+        <div class="stage-expanded">
+          <div class="stage-header">
+            <h2>Agent-Ready Knowledge Architecture</h2>
+          </div>
+          <p class="stage-tagline">Design the knowledge layer that makes reliable AI use possible.</p>
+          <div class="stage-body">
+            <p>We design the knowledge architecture that makes reliable AI use possible — modelling relationships, permissions, provenance, and the metadata AI needs to retrieve the right information in context.</p>
+            <p>This is where gaps identified earlier become a plan — connecting structure, authority, and readiness into a coherent knowledge layer.</p>
+            <p>The result is a dependable knowledge layer that both people and AI can work with confidently.</p>
+          </div>
+          <div class="stage-inset">
+            <div class="stage-callout">
+              <p><strong>Why this matters:</strong> Reliable AI doesn't just need data — it needs context, relationships, and permissions. This stage designs the knowledge layer that provides them.</p>
+            </div>
+            <div class="stage-services">
+              <h3>Typical services</h3>
+              <ul>
+                <li>Knowledge relationship & semantic modelling</li>
+                <li>Permission-aware knowledge design</li>
+                <li>Source origin & traceability</li>
+                <li>Lifecycle & sensitivity metadata design</li>
+                <li>AI evaluation & trust design</li>
+                <li>Human review & governance models</li>
+              </ul>
+            </div>
+          </div>
+          <a class="stage-cta" href="request.html?stage=agent-ready-knowledge-architecture">Start here →</a>
+        </div>
+      </section>
+
+      <section class="diagnostic-section" id="diagnostic">
+        <fieldset class="diagnostic-fieldset">
+          <legend>
+            <span class="diagnostic-title">Where are you in the knowledge lifecycle?</span>
+            <span class="diagnostic-intro">Select the statement that best describes your situation.</span>
+          </legend>
+          <div class="diagnostic-grid">
+            <label class="diagnostic-card">
+              <input type="radio" name="lifecycle-stage" value="knowledge-foundation">
+              <span class="diagnostic-check"></span>
+              <span>We have valuable knowledge, but it's <strong>hard to find and use effectively.</strong></span>
+            </label>
+            <label class="diagnostic-card">
+              <input type="radio" name="lifecycle-stage" value="structure-authority">
+              <span class="diagnostic-check"></span>
+              <span>We know what information we have, but we don't <strong>agree on what's authoritative, who is responsible for maintaining it, or how it fits together.</strong></span>
+            </label>
+            <label class="diagnostic-card">
+              <input type="radio" name="lifecycle-stage" value="documentation-engineering">
+              <span class="diagnostic-check"></span>
+              <span>Our documentation is useful — <strong>keeping it current is the challenge.</strong></span>
+            </label>
+            <label class="diagnostic-card">
+              <input type="radio" name="lifecycle-stage" value="developer-knowledge">
+              <span class="diagnostic-check"></span>
+              <span>Our product works, but <strong>integrating with it is harder than it should be.</strong></span>
+            </label>
+            <label class="diagnostic-card">
+              <input type="radio" name="lifecycle-stage" value="agent-readiness">
+              <span class="diagnostic-check"></span>
+              <span>We want to use our knowledge with AI, but <strong>we're not sure it's ready.</strong></span>
+            </label>
+            <label class="diagnostic-card">
+              <input type="radio" name="lifecycle-stage" value="agent-ready-knowledge-architecture">
+              <span class="diagnostic-check"></span>
+              <span>We're already using AI — now we need to <strong>make the knowledge behind it more reliable.</strong></span>
+            </label>
+          </div>
+          <div class="diagnostic-action">
+            <a id="diagnostic-cta" class="diagnostic-cta-link" href="request.html" hidden>Start here →</a>
+          </div>
+        </fieldset>
+        <div class="diagnostic-catchall">
+          <p><strong>We know something needs to change, but we're not sure what to tackle first.</strong> Tell us what's happening now and what you're trying to improve. We'll help identify the right starting point.</p>
+          <a href="request.html?stage=unsure">Find the right starting point →</a>
+        </div>
       </section>
 
       <section class="cta-band">
         <div>
-          <p class="eyebrow">Not sure which fits?</p>
-          <h2>Start with the problem.</h2>
-          <p>Tell us what’s getting in the way. We’ll tell you whether we can help.</p>
+          <p class="eyebrow">Have a problem worth solving?</p>
+          <h2>Tell us what you're working on.</h2>
         </div>
         <a class="button button-primary" href="request.html">Request a Project</a>
       </section>
@@ -117,6 +391,7 @@
 
   </div>
   <script src="js/main.js" defer></script>
+  <script src="js/services.js" defer></script>
 </body>
 
 </html>
