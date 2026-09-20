@@ -77,9 +77,8 @@ h1 span,h2 span{color:var(--orange)}
     width: 100%;
     height: auto;
 }
-.pillars{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 0;margin-bottom:96px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 0;margin-bottom:96px}
 .four{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
-.three{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .pillars article{display:grid;grid-template-columns:auto 1fr;column-gap:12px}
 .pillars .icon{grid-row:1/3;color:var(--cyan);font-size:1.25rem}
 .pillars h2{font-size:.95rem;margin-bottom:3px}
@@ -394,7 +393,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 
     .hero{padding-top:55px}
     .hero-art{order:-1}
     .hero-art img{max-height:360px;margin:auto}
-    .four,.three,.cards{grid-template-columns:1fr 1fr}
+    .four,.pillars,.cards{grid-template-columns:1fr 1fr}
     .service-grid{grid-template-columns:1fr}
     .request-layout{gap:20px}
     .discipline-visual{min-height:auto}
@@ -412,7 +411,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 
 }
 @media (max-width:620px){
     .page-shell{width:min(calc(100% - 28px),var(--max))}
-    .four,.three,.cards,.form-row{grid-template-columns:1fr}
+    .four,.pillars,.cards,.form-row{grid-template-columns:1fr}
     .hero{min-height:auto}
     h1{font-size:2.85rem}
     .cta-band{align-items:flex-start;flex-direction:column;padding:26px}
