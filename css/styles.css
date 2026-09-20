@@ -310,10 +310,10 @@ input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 
 
 /* Stage details */
 
-.stage-art{max-width:200px;margin:0 auto 24px}
-.stage-art img{width:100%;height:auto}
-.stage-art-centered{margin:0 auto 32px}
 .stage-split{display:grid;grid-template-columns:180px 1fr;gap:40px;align-items:start}
+.stage-art{width:180px;min-width:0;overflow:hidden}
+.stage-art picture{display:block}
+.stage-art img{display:block;width:100%;max-width:180px;height:auto}
 .stage-detail{scroll-margin-top:64px;padding:56px 0;border-top:1px solid var(--border)}
 .stage-header h2{font-size:1.8rem;margin-bottom:8px}
 .stage-tagline{font-size:1.1rem;color:var(--muted);margin-bottom:20px;max-width:640px}
@@ -401,7 +401,8 @@ input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 
     .discipline-visual>img{height:auto;max-height:420px}
     .lifecycle-grid{grid-template-columns:repeat(2,1fr)}
     .stage-split{grid-template-columns:1fr}
-    .stage-art{max-width:140px;margin:0 0 16px}
+    .stage-art{width:120px;margin:0 0 16px}
+    .stage-art img{max-width:120px}
     .stage-columns{grid-template-columns:1fr}
     .stage-inset{grid-template-columns:1fr}
     .diagnostic-grid{grid-template-columns:1fr 1fr}
