@@ -76,8 +76,6 @@ h1 span,h2 span{color:var(--orange)}
 .hero-art img {
     width: 100%;
     height: auto;
-    border-radius: 24px;
-    filter: drop-shadow(0 32px 64px rgba(34, 211, 238, 0.12));
 }
 .pillars{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:28px 0;margin-bottom:96px}
 .four{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
@@ -276,7 +274,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 
     transition:border-color .18s ease,transform .18s ease;
 }
 .lifecycle-stage:hover{border-color:var(--cyan);transform:translateY(-2px)}
-.lifecycle-crystal{width:40px;height:56px}
+.lifecycle-crystal{width:72px;height:72px;object-fit:contain}
 .lifecycle-name{font-size:.92rem;font-weight:700;color:var(--text);line-height:1.3}
 .lifecycle-action{font-size:.8rem;color:var(--muted)}
 
@@ -312,6 +310,10 @@ input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 
 
 /* Stage details */
 
+.stage-art{max-width:200px;margin:0 auto 24px}
+.stage-art img{width:100%;height:auto}
+.stage-art-centered{margin:0 auto 32px}
+.stage-split{display:grid;grid-template-columns:180px 1fr;gap:40px;align-items:start}
 .stage-detail{scroll-margin-top:64px;padding:56px 0;border-top:1px solid var(--border)}
 .stage-header h2{font-size:1.8rem;margin-bottom:8px}
 .stage-tagline{font-size:1.1rem;color:var(--muted);margin-bottom:20px;max-width:640px}
@@ -398,6 +400,8 @@ input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 
     .discipline{position:static;width:auto;margin:10px 0 0 20px}
     .discipline-visual>img{height:auto;max-height:420px}
     .lifecycle-grid{grid-template-columns:repeat(2,1fr)}
+    .stage-split{grid-template-columns:1fr}
+    .stage-art{max-width:140px;margin:0 0 16px}
     .stage-columns{grid-template-columns:1fr}
     .stage-inset{grid-template-columns:1fr}
     .diagnostic-grid{grid-template-columns:1fr 1fr}
@@ -414,7 +418,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 
     .lifecycle-grid{grid-template-columns:repeat(2,1fr)}
     .lifecycle-stage{padding:20px 12px 18px}
     .lifecycle-name{font-size:.85rem;word-break:break-word}
-    .lifecycle-crystal{width:30px;height:42px}
+    .lifecycle-crystal{width:48px;height:48px}
     .diagnostic-grid{grid-template-columns:1fr}
     .page-nav{flex-wrap:wrap}
     .rail-includes{gap:6px}
